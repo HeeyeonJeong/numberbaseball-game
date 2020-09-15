@@ -1,0 +1,106 @@
+/* reset */
+* {
+  margin: 0;
+}
+
+.button:focus,
+.resetbutton:focus,
+.numberbox:focus,
+.numberbox:active {
+  outline-style: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* style */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dfdd80;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.notebox {
+  width: 600px;
+  height: 360px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  line-height: 1.6em;
+  border-radius: 20px;
+  background: #dfdd80;
+  box-shadow: 20px 20px 60px #bebc6d, -20px -20px 60px #fffe93;
+}
+
+.submitbox {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.numberbox {
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  font-size: 15px;
+  border-style: none;
+  border-radius: 10px;
+  margin: 0 10px 10px 0;
+}
+
+.button {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  width: 150px;
+  padding: 8px;
+  border-style: none;
+  border-radius: 10px;
+  background: #dfdd80;
+  box-shadow: 5px 5px 11px #c0be6e, -5px -5px 11px #fefc92;
+}
+
+.resetbutton {
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 150px;
+  padding: 8px;
+  border-style: none;
+  border-radius: 10px;
+  background: #dfdd80;
+  box-shadow: 5px 5px 11px #c0be6e, -5px -5px 11px #fefc92;
+}
+
+.button:hover,
+.resetbutton:hover {
+  border-radius: 10px;
+  background: #dfdd80;
+  box-shadow: inset 5px 5px 11px #c0be6e, inset -5px -5px 11px #fefc92;
+}
+
+.answer {
+  color: #f06e32;
+  font-weight: 700;
+}
+
+/* game reset 버튼 */
+.resetbutton {
+  display: none;
+}
+
+/* 10회 넘길시, 버튼 보이게 */
+.block {
+  display: block;
+}

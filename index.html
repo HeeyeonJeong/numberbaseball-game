@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>숫자야구</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="title">숫자야구</h1>
+    <div class="notebox">
+      <p>4자리의 비밀 숫자를 맞춰보세요! <span class="answer"></span></p>
+      <ol class="note"></ol>
+    </div>
+    <div class="submitbox">
+      <form action="" id="numberset">
+        <input class="numberbox" type="number" min="1000" max="9999" required />
+        <button type="sumbit" class="button">button</button>
+      </form>
+    </div>
+    <form action="">
+      <button type="submit" class="resetbutton">reset</button>
+    </form>
+    <span>
+      반복, 연속된 숫자를 사용할 수 없습니다. / 기회는 10번 입니다. / 숫자 0을
+      사용할 수 없습니다.</span
+    >
+    <script src="./main.js"></script>
+  </body>
+</html>
