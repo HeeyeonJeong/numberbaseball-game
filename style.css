@@ -104,3 +104,31 @@ body {
 .block {
   display: block;
 }
+
+@media screen and (max-width: 376px) {
+  .title {
+    margin-top: 20px;
+  }
+  .notebox {
+    width: 80%;
+    font-size: 18px;
+  }
+  .game-desc {
+    padding: 30px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .title {
+    font-size: 20px;
+  }
+  .notebox {
+    width: 80%;
+    font-size: 13px;
+  }
+
+  .submitbox .button {
+    width: 110px;
+  }
+}
